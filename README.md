@@ -57,4 +57,14 @@ pip install webdriver-manager
 python3 scrapy.py
 ```
 
-The script will create an excel file with all the URLs extracted from the jobs list we got
+The script will first scrap all the jobs links from the jobs search result. Later we open all the URL one after the other and scrap the below informations:
+* Job title
+* Company Name
+* Company location
+* Post dates
+* Seniority level
+* Employment type
+* Job function
+* Industries
+
+The script will open the chrome and scrap the information and all this process runs in the background.
